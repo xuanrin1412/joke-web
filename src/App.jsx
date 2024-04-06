@@ -16,7 +16,6 @@ function App() {
   }, []);
 
   const handleClick = (vote) => {
-    console.log("vote", vote);
     if (currentIndex < data.length) {
       setCurrentIndex(currentIndex + 1);
       const updatedVotes = { ...votes, [currentIndex]: vote };
